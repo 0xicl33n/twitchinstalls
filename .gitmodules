@@ -1,0 +1,3 @@
+[submodule "install-arch"]
+	path = install-arch
+	url = https://github.com/fiws/install-arch
