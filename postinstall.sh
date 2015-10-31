@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo "print('hello,world!')" >> ~/hello.py
+python3 ~/hello.py
 FILE="/tmp/out.$$"
 GREP="/bin/grep"
 # Make sure only root can run this
@@ -10,4 +11,5 @@ if [ "$(id -u)" != "0" ]; then
 
 pacman -Syuu
 pacman -S --noconfirm base-devel zsh screen nmap openssh i3-wm xorg-core vba python2-minimal irssi i3status dmenu
+
 
