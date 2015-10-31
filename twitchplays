@@ -1,0 +1,23 @@
+#!/bin/bash
+su
+pacman -S nodejs g++ make git-core xdotool
+cd /opt && git clone https://github.com/hzoo/TwitchPlaysX.git twitchplays
+cd twitchplays && npm install
+cat << '
+{
+    	"TWITCH_OAUTH": "OAUTH_HERE",
+        "TWITCH_USERNAME": "TWITCH_NAME_HERE",
+	"TWITCH_CHANNEL": "#CHANNEL_HERE",
+	"CONFIG_OS": "linux",
+	"CONFIG_PROGRAM_NAME": "VBA",
+	"CONFIG_MAX_CHAR_NAME": 8,
+	"CONFIG_MAX_CHAR_COMMAND": 20,
+	"CONFIG_SEND_KEY": true,
+	"CONFIG_FILTERED_COMMANDS": [],
+	"CONFIG_THROTTLED_COMMANDS": []
+} '> config.json
+
+#launch with:
+
+#npm start
+	
