@@ -3,7 +3,7 @@
 sudo pacman -S nodejs g++ make git-core xdotool
 cd /opt && git clone https://github.com/hzoo/TwitchPlaysX.git twitchplays
 cd twitchplays && npm install
-cat << '
+cat << EOF >> config.json
 {
     	"TWITCH_OAUTH": "OAUTH_HERE",
         "TWITCH_USERNAME": "TWITCH_NAME_HERE",
@@ -15,7 +15,9 @@ cat << '
 	"CONFIG_SEND_KEY": true,
 	"CONFIG_FILTERED_COMMANDS": [],
 	"CONFIG_THROTTLED_COMMANDS": []
-} '> config.json
+}
+EOF 
+
 
 #launch with:
 
