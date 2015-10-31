@@ -1,2 +1,2 @@
 # twitchinstalls
-a git repo
+BATTLEPLAN
