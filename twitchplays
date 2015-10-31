@@ -1,6 +1,6 @@
 #!/bin/bash
-su
-pacman -S nodejs g++ make git-core xdotool
+#su
+sudo pacman -S nodejs g++ make git-core xdotool
 cd /opt && git clone https://github.com/hzoo/TwitchPlaysX.git twitchplays
 cd twitchplays && npm install
 cat << '
