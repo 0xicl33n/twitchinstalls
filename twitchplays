@@ -3,10 +3,10 @@
 sudo yes | pacman -S  --noconfirm nodejs make git xdotool npm
 cd /opt && git clone https://github.com/hzoo/TwitchPlaysX.git twitchplays
 cd twitchplays && npm install
-cat > config.json << EOF
+cat > config.json << 'EOF'
 {
-    	"TWITCH_OAUTH": "OAUTH_HERE",
-        "TWITCH_USERNAME": "TWITCH_NAME_HERE",
+	"TWITCH_OAUTH": "OAUTH_HERE",
+	"TWITCH_USERNAME": "TWITCH_NAME_HERE",
 	"TWITCH_CHANNEL": "#CHANNEL_HERE",
 	"CONFIG_OS": "linux",
 	"CONFIG_PROGRAM_NAME": "VBA",
@@ -16,7 +16,7 @@ cat > config.json << EOF
 	"CONFIG_FILTERED_COMMANDS": [],
 	"CONFIG_THROTTLED_COMMANDS": []
 }
-EOF 
+EOF
 
 
 #launch with:
