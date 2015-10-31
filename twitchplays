@@ -1,9 +1,9 @@
 #!/bin/bash
 #su
-sudo yes | pacman -S  --noconfirm nodejs make git xdotool 
+sudo yes | pacman -S  --noconfirm nodejs make git xdotool npm
 cd /opt && git clone https://github.com/hzoo/TwitchPlaysX.git twitchplays
 cd twitchplays && npm install
-cat << EOF >> config.json
+cat > config.json << EOF
 {
     	"TWITCH_OAUTH": "OAUTH_HERE",
         "TWITCH_USERNAME": "TWITCH_NAME_HERE",
