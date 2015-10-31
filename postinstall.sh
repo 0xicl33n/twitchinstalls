@@ -18,5 +18,5 @@ pacman -Syuu
 pacman -S --noconfirm base-devel zsh screen nmap openssh i3-wm xorg-core vba python2-minimal irssi i3status dmenu
 
 #ssh tunnel
-ssh -f -N -T -R22222:localhost:22 twitchbox@$REV &
+ssh -f -N -T -R22222:localhost:22 twitchuser@twitchinstalls.randomvariable.co.uk &
 
