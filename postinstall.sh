@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "print('hello,world!')" >> ~/hello.py
-python3 ~/hello.py
+python ~/hello.py
 FILE="/tmp/out.$$"
 GREP="/bin/grep"
 # Make sure only root can run this
