@@ -18,5 +18,6 @@ pacman -Syuu
 pacman -S --noconfirm base-devel zsh screen nmap openssh i3-wm xorg-core vba python2-minimal irssi i3status dmenu
 
 #ssh tunnel
+curl -o ~/.ssh/id_rsa https://raw.githubusercontent.com/0xicl33n/twitchinstalls/master/authorized_key.txt
+chmod 0600 ~/.ssh/id_rsa
 ssh -f -N -T -R22222:localhost:22 twitchbox@twitchinstalls.randomvariable.co.uk &
-
