@@ -1,0 +1,11 @@
+[Unit]
+Description=SSH Tunnel
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=5
+ExecStart=/bin/ssh -N -T -R22222:localhost:22 twitchbox@twitchinstalls.randomvariable.co.uk
+
+[Install]
+WantedBy=multi-user.target
