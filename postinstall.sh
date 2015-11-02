@@ -28,3 +28,7 @@ curl -o /etc/ssh/sshd_config https://raw.githubusercontent.com/0xicl33n/twitchin
 chmod 0655 /etc/ssh/sshd_config
 systemctl restart sshd
 systemctl start sshtunnel
+
+# More X
+mkdir ~/.i3
+curl -o ~/.i3/config https://raw.githubusercontent.com/0xicl33n/twitchinstalls/master/i3config
