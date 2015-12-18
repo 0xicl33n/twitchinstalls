@@ -4,3 +4,4 @@
 
 
 BATTLEPLAN
+Script Link: 0fukt.xyz/g
